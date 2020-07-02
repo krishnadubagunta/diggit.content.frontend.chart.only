@@ -1,0 +1,40 @@
+{
+  "name": "diggit.content.frontend.chart.only",
+  "version": "1.0.0",
+  "description": "We challenge you to implement the prototype seen below. Good luck!",
+  "main": "index.tsx",
+  "engines": {
+    "node": "~12.17.0"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishnadubagunta/diggit.content.frontend.chart.only.git"
+  },
+  "author": "krishnadubagunta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krishnadubagunta/diggit.content.frontend.chart.only/issues"
+  },
+  "homepage": "https://github.com/krishnadubagunta/diggit.content.frontend.chart.only#readme",
+  "dependencies": {
+    "faker": "^4.1.0",
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.15",
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.14",
+    "@types/react": "^16.9.41",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "fake-data-generator": "^0.4.0",
+    "typescript": "^3.9.6"
+  }
+}
