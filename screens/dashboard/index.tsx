@@ -5,10 +5,12 @@ import companyFaker from "faker/companyFaker"
 const DATA_COUNT: number = 50
 
 const Dashboard = () => {
-  const individualData = useFakerGenerator({ count: 50, model: individualFaker})
-  const companyData = useFakerGenerator({ count: 50, model: companyFaker})
+  const {data: individualData } = useFakerGenerator({ count: DATA_COUNT, model: individualFaker})
+  const { data } = useFakerGenerator({ count: DATA_COUNT, model: companyFaker})
 
   return (<div>
     
   </div>)
 }
+
+export default Dashboard

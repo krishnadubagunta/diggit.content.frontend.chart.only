@@ -1,27 +1,27 @@
 import { generateModel } from "fake-data-generator"
-import { times } from "lodash-es"
-import { useEffect, useState } from "react"
+import { times } from "lodash"
+import { useEffect, useState, useCallback, useMemo } from "react"
 import { FakerModel } from "./types"
 
 const useFakerGenerator = ({ count, model }: { count: number, model: FakerModel }) => {
   const [data, setData] = useState(null)
   const generateAndSetData = () => {
-    const data = times(count, () => generateModel({
-      amountArg: 1,
-      modelArg: model
-    }))
-    setData(data)
+    const randomData = generateModel({
+      amountArg: count,
+      modelArg: model,
+      inputType: 'object',
+      outputType: 'object'
+    })
+    setData(randomData)
   }
 
-  const randomizeData = useEffect(() => {
-    return generateAndSetData
+  useEffect(() => {
+    return generateAndSetData()
   }, [count, model])
 
-  useEffect(() => randomizeData(), [count, model])
 
   return {
-    data,
-    randomizeData
+    data
   }
 }
 
