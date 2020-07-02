@@ -1,4 +1,4 @@
-import Dashboard from "../screens/dashboard"
+import Dashboard from "screens/dashboard"
 
 const Index = () => <div>
     <Dashboard />

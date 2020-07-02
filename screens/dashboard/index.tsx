@@ -1,6 +1,6 @@
-import useFakerGenerator from "../../utils/faker"
-import individualFaker from "../../utils/individualFaker"
-import companyFaker from "../../utils/companyFaker"
+import useFakerGenerator from "faker"
+import individualFaker from "faker/individualFaker"
+import companyFaker from "faker/companyFaker"
 
 const DATA_COUNT: number = 50
 

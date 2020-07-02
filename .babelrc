@@ -6,7 +6,8 @@
         {
             "root": ["."],
             "alias": {
-                "faker": "./utils/faker"
+                "faker": "./utils/faker",
+                "screens": "./screens"
             }
         }
     ]

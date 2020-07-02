@@ -1,4 +1,4 @@
-import { FakerModel } from "./faker/types"
+import { FakerModel } from "./types"
 
 const CompanyFakerModel: FakerModel = {
   id: {
