@@ -1,0 +1,12 @@
+.text {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.textprimarycolor {
+  color: var(--primary-text-color);
+}
+
+.textsecondarycolor {
+  color: var(--secondary-text-color);
+}
