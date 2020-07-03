@@ -1,4 +1,5 @@
 import { FakerModel } from "./types"
+import { features } from "process"
 
 const CompanyFakerModel: FakerModel = {
   model: {
@@ -7,8 +8,8 @@ const CompanyFakerModel: FakerModel = {
       value: "random.uuid"
     },
     date: {
-      type: "faker",
-      value: "date.month",
+      type: "randomNumberBetween",
+      value: [1546462347000, 1561927947000],
     },
     count: {
       type: "randomNumberBetween",

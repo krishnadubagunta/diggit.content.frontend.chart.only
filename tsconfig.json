@@ -6,13 +6,16 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
+      "components/*": [
+        "./components/*"
+      ],
       "screens": [
         "./screens"
       ],
-      "faker": [
+      "diggitfaker": [
         "./utils/faker"
       ],
-      "faker/*": [
+      "diggitfaker/*": [
         "./utils/faker/*"
       ]
     },

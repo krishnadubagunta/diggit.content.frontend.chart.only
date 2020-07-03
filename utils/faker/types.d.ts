@@ -16,6 +16,8 @@ interface FakerInnerObject {
   options?: Array<any>,
 }
 
+export type ChartDataObject = Array<IndividualFakerObject>
+
 export interface FakerModel {
   model: {
     [x:string]: FakerInnerObject

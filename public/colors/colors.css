@@ -1,0 +1,15 @@
+:root {
+  --primary-color: #1bfbe4;
+  --secondary-color: #ff56ee;
+  --tertiary-color: #4effa1;
+
+  --main-background-color: #050711;
+  --primary-text-color: #cccccc;
+  --secondary-text-color: #849fb4;
+
+  --primary-top-gradient-color: rgb(78, 255, 207);
+  --primary-bottom-gradient-color: rgb(8, 164, 188);
+
+  --secondary-top-gradient-color: rgb(255, 86, 238);
+  --secondary-bottom-gradient-color: rgb(62, 87, 194);
+}

@@ -7,9 +7,8 @@ const IndividualFakerModel: FakerModel = {
       value: "random.uuid"
     },
     date: {
-      type: "faker",
-      value: "date.between",
-      options: ["2019-1-2", "2019-6-29"]
+      type: "randomNumberBetween",
+      value: [1546313014000, 1559359414000],
     },
     count: {
       type: "randomNumberBetween",
