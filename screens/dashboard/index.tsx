@@ -5,11 +5,10 @@ import Chart from 'components/DiggitChart'
 import LargeText from 'components/typography/LargeText'
 import { Container, Row } from 'react-bootstrap'
 import styles from './styles.module.css'
-import { FunctionComponent } from 'react'
 
 const DATA_COUNT = 50
 
-const Dashboard = (): FunctionComponent<any> => {
+const Dashboard = (): JSX.Element => {
   const { data: individualData } = useFakerGenerator({
     count: DATA_COUNT,
     model: individualFaker,

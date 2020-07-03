@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 import DiggitNavbar from 'components/Navbar'
 import { AppProps } from 'next/app'
 
-export default function MyApp({ Component, pageProps }: AppProps): App {
+export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <Container fluid>
       <DiggitNavbar />

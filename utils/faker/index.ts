@@ -1,9 +1,9 @@
 import { generateModel } from 'fake-data-generator'
 import { useEffect, useState } from 'react'
 import { map, sortBy, truncate } from 'lodash'
-import { FakerModel, ChartDataObject } from './types'
+import { ChartDataObject, FakerGenerator } from './types'
 
-const transformData: ChartDataObject = (data) =>
+const transformData = (data: any): ChartDataObject =>
   map(data, ({ id, date, count }) => {
     const dateObj = new Date(date)
     const transformedMonth = new Intl.DateTimeFormat('en-US', {
@@ -25,12 +25,9 @@ const transformData: ChartDataObject = (data) =>
 
 const sortData = (data) => sortBy(data, ({ date }) => date)
 
-const useFakerGenerator: ChartDataObject = ({
+const useFakerGenerator: FakerGenerator = ({
   count,
   model,
-}: {
-  count: number
-  model: FakerModel
 }) => {
   const [data, setData] = useState<ChartDataObject | null>(null)
   const generateAndSetData = () => {

@@ -18,6 +18,13 @@ interface FakerInnerObject {
 
 export type ChartDataObject = Array<IndividualFakerObject>
 
+export type FakerGenerator = ({
+  count: number,
+  model: FakerModel,
+}) => {
+  data: ChartDataObject
+}
+
 export interface FakerModel {
   model: {
     [x: string]: FakerInnerObject

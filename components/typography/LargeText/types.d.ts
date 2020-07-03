@@ -1,7 +1,8 @@
-import { PropsWithChildren, FunctionComponent } from 'react'
+import { FunctionComponent } from 'react'
 
-export interface LargeTextProps extends PropsWithChildren {
+export interface LargeTextProps {
   color: 'primary' | 'secondary'
+  children: ReactNode
 }
 
 export type LargeTextComponentType = FunctionComponent<LargeTextProps>

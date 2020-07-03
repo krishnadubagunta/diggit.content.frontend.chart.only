@@ -1,9 +1,6 @@
 import Dashboard from 'screens/dashboard'
-import { FunctionComponent, PropsWithChildren } from 'react'
 
-type IndexProps = PropsWithChildren
-
-const Index = (): FunctionComponent<IndexProps> => (
+const Index = (): JSX.Element => (
   <div>
     <Dashboard />
   </div>
