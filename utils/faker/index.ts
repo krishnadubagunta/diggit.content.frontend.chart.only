@@ -25,10 +25,7 @@ const transformData = (data: any): ChartDataObject =>
 
 const sortData = (data) => sortBy(data, ({ date }) => date)
 
-const useFakerGenerator: FakerGenerator = ({
-  count,
-  model,
-}) => {
+const useFakerGenerator: FakerGenerator = ({ count, model }) => {
   const [data, setData] = useState<ChartDataObject | null>(null)
   const generateAndSetData = () => {
     const randomData = generateModel({
