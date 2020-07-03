@@ -1,0 +1,11 @@
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 64px;
+}
+
+.row div {
+  padding-top: 1.2em;
+}

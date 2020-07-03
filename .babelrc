@@ -1,15 +1,3 @@
 {
-  "presets": ["next/babel"],
-  "plugins": [
-    [
-        "module-resolver",
-        {
-            "root": ["."],
-            "alias": {
-                "faker": "./utils/faker",
-                "screens": "./screens"
-            }
-        }
-    ]
-  ]
+  "presets": ["next/babel"]
 }

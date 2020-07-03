@@ -4,13 +4,15 @@
   "description": "We challenge you to implement the prototype seen below. Good luck!",
   "main": "index.tsx",
   "engines": {
-    "node": "~12.17.0"
+    "node": ">=12.16.2"
   },
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "yarn lint -- --fix"
   },
   "repository": {
     "type": "git",
@@ -23,18 +25,37 @@
   },
   "homepage": "https://github.com/krishnadubagunta/diggit.content.frontend.chart.only#readme",
   "dependencies": {
+    "@types/classnames": "^2.2.10",
+    "@types/recharts": "^1.8.13",
+    "bootstrap": "^4.5.0",
+    "classnames": "^2.2.6",
     "faker": "^4.1.0",
     "fs": "^0.0.1-security",
     "lodash": "^4.17.15",
     "next": "^9.4.4",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "recharts": "^1.8.5"
   },
   "devDependencies": {
     "@types/node": "^14.0.14",
     "@types/react": "^16.9.41",
+    "@typescript-eslint/eslint-plugin": "^3.5.0",
+    "@typescript-eslint/parser": "^3.5.0",
     "babel-plugin-module-resolver": "^4.0.0",
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-typescript-prettier": "^3.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.5",
     "fake-data-generator": "^0.4.0",
+    "prettier": "^2.0.5",
     "typescript": "^3.9.6"
   }
 }
